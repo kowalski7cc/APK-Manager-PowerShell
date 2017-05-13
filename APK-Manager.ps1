@@ -102,7 +102,7 @@ Write-Host "#           By Kowalski7cc   #"
 Write-Host "##############################"
 Write-host ""
 Write-Host "Waiting for phone"
-#adb wait-for-device
+adb wait-for-device
 adb devices
 
 
@@ -116,6 +116,6 @@ $result = $host.ui.PromptForChoice($title, $message, $options, 0)
 switch($result)
 {
     0 {Invoke-APKBackup}
-    1 {Adb-APK-Restore}
-    2 {Adb-APK-Clean}
+    1 {Invoke-APKRestore}
+    2 {Remove-APKBackup}
 }
