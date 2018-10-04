@@ -6,5 +6,4 @@ This allows faster phone restore on slow connections.
 Run with powershell **APK-Manager.ps1** and follow the indication on screen
 ## License
 Project is distribuited under the GNU General Public License 3.
-
 Further details in LICENSE file
